@@ -1,0 +1,41 @@
+.SliderрhotoTeachers {
+         position: absolute;
+        top: -63px;
+        left: 0px; 
+    }
+
+.рhotoTeachers {
+    position: relative;
+    margin-bottom: -1px;
+    height: 180px;
+		&__background {
+            width: 180px;
+		}
+
+		&__photoTicher {
+            position: absolute;
+            left: 28px;
+            top: 5px;
+            width: 125px;
+		}
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+    align-items: center;
+}
+.SliderрhotoTeachers .slick-track{
+    display: block;
+}
+
+
+.SliderрhotoTeachers .slick-arrow{
+    position: absolute;
+    top: 91.5%;
+    font-size: 0;
+    width: 33px;
+    height: 9px;
+}

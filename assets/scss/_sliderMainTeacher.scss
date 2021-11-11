@@ -1,0 +1,81 @@
+.containerSlider {
+
+}
+.slider {
+
+    &__content {
+        position: relative;
+    }
+}
+.content {
+
+    &__bgTape {
+        width: 100%;
+    }
+
+    &__photo {
+        position: absolute;
+        top: 16%;
+        left: 4%;
+        width: 93%;
+        height: 70%;
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+.containerSlider{
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+}
+.containerSlider .slick-arrow{
+    position: absolute;
+    top: 94.5%;
+    font-size: 0;
+    width: 33px;
+    height: 9px;
+}
+
+.containerSlider .slick-arrow.slick-prev{
+    left: 43.7%;
+    background: url('/assets/img/arrow/arrowLeft.png') 0 0/65% no-repeat ;
+
+}
+.containerSlider .slick-arrow.slick-next{
+    right: 42.7%;
+    background: url('/assets/img/arrow/arrowRight.svg') 0 0/65%  no-repeat;
+   
+}
+
+.containerSlider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px -6px 10px 0px;
+    width: 100%;
+}
+.containerSlider .slick-dots li{
+    list-style: none;
+}
+.containerSlider .slick-dots li button{
+
+    font-size: 0; 
+    width: 5px;
+    height: 5px;
+    background: linear-gradient(180deg, #FFC500 0%, #FF9346 100%);
+    border-radius: 100%;
+    margin-right: 6px;
+}
+.containerSlider .slick-dots li.slick-active button{
+    background: #612B1C;
+}
+
+.slider__content {}
+
+

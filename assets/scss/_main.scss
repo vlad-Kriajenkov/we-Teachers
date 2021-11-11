@@ -1,0 +1,162 @@
+/**/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.container {
+
+    &__background {
+        background: #FFFBD8;
+    }
+    &__width {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px 90px 0px;
+    }
+ 
+}
+.container__titleSlider{
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: #612B1C;
+    margin: 76px 0px 30px 0px;
+
+}
+.container__titleSlider2{
+    margin-bottom: 28px;
+}
+.titleSlider2{
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: #612B1C;
+    margin: 93px 0px 15px 0px;
+
+
+}
+.paragrafSlider{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #612B1C;
+}
+
+.people {
+    width: 260px;
+    &__box {
+        display: flex;
+    }
+
+    &__photo {
+        position: relative;
+    }
+
+    &__info {
+        margin: 25px 0px 0px 4px;
+    }
+
+    &__himself {
+    }
+}
+.photo {
+
+    &__ellipse {
+        width: 120px;
+    }
+
+    &__doubleQuotesReverse {
+        position: absolute;
+        left: 0px;
+    }
+
+    &__teacherMen{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 80px;
+    }
+}
+.info {
+
+    &__name {
+        font-family: "Roboto Slab";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10.5px;
+        line-height: 14px;
+        color: #612B1C;
+    }
+
+    &__position {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        color: #612B1C;
+        margin-top: 7px;
+        letter-spacing: -0.5px;
+    }
+}
+.himself {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #612B1C;
+    padding: 15px 41px 0px 40px;
+    line-height: 13.5px;
+}
+.Form {
+
+    &__download {
+       display: flex;
+       justify-content: center;
+        width: 190px;
+        background: #85371F;
+        border-radius: 60px;
+        padding: 13px;
+        margin: 18px auto 0px;
+        button{
+            display: flex;
+            align-items:center;
+            margin: 0px;
+            background:none;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: #FFFFFF;
+            img{
+                width:15px;
+            }
+
+        }
+    }
+}
+.Form {
+
+    &__infoDownload {
+        margin: 20px auto 75px auto;
+    }
+}
+.infoDownload {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #612B1C;
+}
+
+
+/**/
+

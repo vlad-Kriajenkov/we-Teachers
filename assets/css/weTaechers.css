@@ -1,0 +1,899 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400;700&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Icon 1 */
+#nav-icon1 {
+  width: 35px;
+  height: 35px;
+  background-color: #612B1C;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 45%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 12px;
+  left: 9px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 16px;
+  left: 9px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 20px;
+  left: 9px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -10px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
+.boxNav__socialNetwork {
+  background-color: #FFF06A;
+}
+.boxNav__infoNetwork {
+  background: #612B1C;
+}
+
+.containerSocial {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.containerNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 6px;
+}
+.containerNav nav {
+  margin-right: 38px;
+}
+.containerNav nav a {
+  margin-left: 3px;
+}
+.containerNav nav a img {
+  width: 17px;
+}
+
+.containerTitle {
+  margin: 38px 110px 0px 0px;
+}
+.containerTitle h1 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  color: #612B1C;
+}
+.containerTitle__quote {
+  margin: 29px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quoteBox__title {
+  display: flex;
+  align-items: center;
+}
+.quoteBox__meaning {
+  display: flex;
+  align-items: center;
+  margin: 7px 0px 0px 27px;
+}
+
+.wrapperQuotImg {
+  position: relative;
+  margin: 0px 15px 0px -2px;
+}
+
+.quote__img {
+  position: absolute;
+  bottom: 7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+}
+.quote__title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  letter-spacing: 0.1px;
+  color: #612B1C;
+}
+.quote__meaning {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6px;
+  color: #612B1C;
+}
+
+.containerButton {
+  margin: 30px 175px 50px 0px;
+}
+
+.linkYouTube {
+  display: flex;
+  align-items: center;
+  background: #F82E2C;
+  border-radius: 60px;
+  width: 255px;
+  height: 40px;
+}
+.linkYouTube__img {
+  width: 27px;
+  margin: 0px 15px 0px 19px;
+}
+.linkYouTube__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
+.containerInfo {
+  width: 60%;
+  height: 164px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.containerInfo nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.wrapperInfoNetwerk {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrapperInfoNetwerk a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+.book {
+  margin-left: 43px;
+}
+
+.wreath {
+  margin-left: 33px;
+}
+
+.LeafFeather {
+  margin-left: 40px;
+}
+
+#inkSheet {
+  width: 40px;
+  margin-right: 8px;
+}
+
+#book {
+  width: 52px;
+  margin-right: 8px;
+}
+
+#wreath {
+  width: 40px;
+  margin-right: 8px;
+}
+
+#LeafFeather {
+  width: 40px;
+  margin-right: 8px;
+}
+
+#circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: linear-gradient(233.28deg, #FFC500 10.11%, #FF9346 81.01%), #612B1C;
+}
+
+/**/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.container__background {
+  background: #FFFBD8;
+}
+.container__width {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px 90px 0px;
+}
+
+.container__titleSlider {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: #612B1C;
+  margin: 76px 0px 30px 0px;
+}
+
+.container__titleSlider2 {
+  margin-bottom: 28px;
+}
+
+.titleSlider2 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  color: #612B1C;
+  margin: 93px 0px 15px 0px;
+}
+
+.paragrafSlider {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #612B1C;
+}
+
+.people {
+  width: 260px;
+}
+.people__box {
+  display: flex;
+}
+.people__photo {
+  position: relative;
+}
+.people__info {
+  margin: 25px 0px 0px 4px;
+}
+.photo__ellipse {
+  width: 120px;
+}
+.photo__doubleQuotesReverse {
+  position: absolute;
+  left: 0px;
+}
+.photo__teacherMen {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+}
+
+.info__name {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.5px;
+  line-height: 14px;
+  color: #612B1C;
+}
+.info__position {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #612B1C;
+  margin-top: 7px;
+  letter-spacing: -0.5px;
+}
+
+.himself {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #612B1C;
+  padding: 15px 41px 0px 40px;
+  line-height: 13.5px;
+}
+
+.Form__download {
+  display: flex;
+  justify-content: center;
+  width: 190px;
+  background: #85371F;
+  border-radius: 60px;
+  padding: 13px;
+  margin: 18px auto 0px;
+}
+.Form__download button {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  background: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.Form__download button img {
+  width: 15px;
+}
+
+.Form__infoDownload {
+  margin: 20px auto 75px auto;
+}
+
+.infoDownload {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  color: #612B1C;
+}
+
+/**/
+.slider__content {
+  position: relative;
+}
+
+.content__bgTape {
+  width: 100%;
+}
+.content__photo {
+  position: absolute;
+  top: 16%;
+  left: 4%;
+  width: 93%;
+  height: 70%;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.containerSlider {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.containerSlider .slick-arrow {
+  position: absolute;
+  top: 94.5%;
+  font-size: 0;
+  width: 33px;
+  height: 9px;
+}
+
+.containerSlider .slick-arrow.slick-prev {
+  left: 43.7%;
+  background: url("/assets/img/arrow/arrowLeft.png") 0 0/65% no-repeat;
+}
+
+.containerSlider .slick-arrow.slick-next {
+  right: 42.7%;
+  background: url("/assets/img/arrow/arrowRight.svg") 0 0/65% no-repeat;
+}
+
+.containerSlider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px -6px 10px 0px;
+  width: 100%;
+}
+
+.containerSlider .slick-dots li {
+  list-style: none;
+}
+
+.containerSlider .slick-dots li button {
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(180deg, #FFC500 0%, #FF9346 100%);
+  border-radius: 100%;
+  margin-right: 6px;
+}
+
+.containerSlider .slick-dots li.slick-active button {
+  background: #612B1C;
+}
+
+.Postcard img {
+  border: 5px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.containerSliderPostcard {
+  position: relative;
+  width: 82%;
+  margin: 0px auto;
+}
+
+.containerSliderPostcard .slick-arrow {
+  position: absolute;
+  top: 91.5%;
+  font-size: 0;
+  width: 33px;
+  height: 9px;
+}
+
+.containerSliderPostcard .slick-arrow.slick-prev {
+  left: 40.5%;
+  background: url("/assets/img/arrow/arrowLeft.png") 0 0/65% no-repeat;
+}
+
+.containerSliderPostcard .slick-arrow.slick-next {
+  right: 39.5%;
+  background: url("/assets/img/arrow/arrowRight.svg") 0 0/65% no-repeat;
+}
+
+.containerSliderPostcard .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px -6px 20px 0px;
+  width: 100%;
+}
+
+.containerSliderPostcard .slick-dots li {
+  list-style: none;
+}
+
+.containerSliderPostcard .slick-dots li button {
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(180deg, #FFC500 0%, #FF9346 100%);
+  border-radius: 100%;
+  margin-right: 6px;
+}
+
+.containerSliderPostcard .slick-dots li.slick-active button {
+  background: #612B1C;
+}
+
+.Postcard {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.Postcard img {
+  width: 56%;
+}
+
+.Postcard.slick-center img {
+  text-align: center;
+  width: 77%;
+}
+
+.SliderрhotoTeachers {
+  position: absolute;
+  top: -63px;
+  left: 0px;
+}
+
+.рhotoTeachers {
+  position: relative;
+  margin-bottom: -1px;
+  height: 180px;
+}
+.рhotoTeachers__background {
+  width: 180px;
+}
+.рhotoTeachers__photoTicher {
+  position: absolute;
+  left: 28px;
+  top: 5px;
+  width: 125px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.SliderрhotoTeachers .slick-track {
+  display: block;
+}
+
+.SliderрhotoTeachers .slick-arrow {
+  position: absolute;
+  top: 91.5%;
+  font-size: 0;
+  width: 33px;
+  height: 9px;
+}
+
+.wrapperFooter {
+  background: #FFF06A;
+}
+
+.container__widthFoter {
+  width: 59%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto 30px auto;
+}
+
+.slogan {
+  width: 100%;
+}
+.slogan h1 {
+  font-family: "Adelle Cyrillic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #612B1C;
+  margin-top: 25px;
+}
+
+.textColorSlogon {
+  font-family: "Adelle Cyrillic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  background: #612B1C;
+  color: #FFF06A;
+}
+
+.services__nav {
+  width: 100%;
+}
+
+.nav_nav {
+  margin: 18px 0px 0px 75px;
+}
+.nav__li {
+  padding: 6px;
+}
+.nav__li a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #612B1C;
+}
+
+.contact {
+  width: 100%;
+  margin-top: 23px;
+}
+.contact__info {
+  margin: 9px 0px 5px 74px;
+}
+.contact__socialNetworks {
+  margin: 15px 0px 5px 74px;
+}
+.contact__socialNetworks a {
+  margin-right: 2px;
+}
+.contact__socialNetworks img {
+  width: 18px;
+}
+
+.info__phone {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #612B1C;
+  margin-bottom: 5px;
+}
+.info__gmail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: #612B1C;
+}
+
+@media (min-width: 1300px) {
+  .containerSocial {
+    width: 1400px;
+  }
+
+  .containerInfo {
+    width: 1400px;
+  }
+
+  .containerSlider {
+    width: 1400px;
+  }
+
+  .containerSliderPostcard {
+    width: 1400px;
+  }
+
+  .container__widthFoter {
+    width: 750px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .containerSocial {
+    width: 100%;
+  }
+
+  .containerInfo {
+    width: 100%;
+  }
+
+  /* sliderMainTeacher */
+  .containerSlider .slick-arrow.slick-prev {
+    left: 38.7%;
+  }
+
+  .containerSlider .slick-arrow.slick-next {
+    right: 37.7%;
+  }
+
+  .containerSlider .slick-arrow {
+    top: 92%;
+  }
+
+  /*sliderMainTeacher*/
+  /* _sliderPostcard */
+  .containerSliderPostcard .slick-arrow.slick-prev {
+    left: 39.7%;
+  }
+
+  .containerSliderPostcard .slick-arrow.slick-next {
+    right: 38.7%;
+  }
+
+  .containerSliderPostcard .slick-arrow {
+    top: 88.5%;
+  }
+
+  /*_sliderPostcard*/
+}
+@media (max-width: 767px) {
+  /**/
+  .containerSocial {
+    width: 100%;
+  }
+
+  .containerInfo {
+    width: 100%;
+  }
+
+  .containerTitle {
+    margin: 38px 10px 0px 0px;
+  }
+
+  .containerButton {
+    margin: 30px 40px 50px 0px;
+  }
+
+  /**/
+  /**/
+  .containerInfo nav ul {
+    width: 300px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .wreath {
+    margin: 0px;
+  }
+
+  .wrapperInfoNetwerk {
+    margin-bottom: 5px;
+  }
+
+  /**/
+  /**/
+  .container__width {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /**/
+  /* sliderMainTeacher */
+  .containerSlider .slick-arrow.slick-prev {
+    left: 38.7%;
+  }
+
+  .containerSlider .slick-arrow.slick-next {
+    right: 37.7%;
+  }
+
+  .containerSlider .slick-arrow {
+    top: 90.5%;
+  }
+
+  /* sliderMainTeacher */
+  /* _sliderPostcard */
+  .containerSliderPostcard .slick-arrow.slick-prev {
+    left: 35.7%;
+  }
+
+  .containerSliderPostcard .slick-arrow.slick-next {
+    right: 34.7%;
+  }
+
+  .containerSliderPostcard .slick-arrow {
+    top: 83.5%;
+  }
+
+  /* _sliderPostcard */
+  /* footer */
+  .container__widthFoter {
+    flex-direction: column;
+  }
+
+  .slogan {
+    text-align: center;
+  }
+
+  .services__nav {
+    text-align: center;
+  }
+
+  .nav_nav {
+    margin: 0px;
+  }
+
+  .contact {
+    text-align: center;
+  }
+  .contact__info {
+    margin: 0px;
+  }
+  .contact__socialNetworks {
+    margin: 5px 0px 0px 0px;
+  }
+
+  /* footer */
+}

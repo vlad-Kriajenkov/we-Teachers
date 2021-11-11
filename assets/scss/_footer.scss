@@ -1,0 +1,103 @@
+.wrapperFooter {
+   background: #FFF06A; 
+}
+.container {
+
+		&__widthFoter {
+            width: 59%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px auto 30px auto;
+		}
+}
+.slogan {
+    width: 100%;
+    h1{
+    font-family: "Adelle Cyrillic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #612B1C;
+    margin-top: 25px;
+    }
+}
+.textColorSlogon {
+    font-family: "Adelle Cyrillic";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: #612B1C;
+    color:#FFF06A
+}
+.services {
+
+		&__nav {
+            width: 100%;
+
+		}
+}
+
+
+
+.nav {
+        &_nav {
+            margin: 18px 0px 0px 75px;
+        }
+        
+		&__ul {
+		}
+
+		&__li {
+            padding: 6px;
+            a{
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                text-transform: capitalize;
+                color: #612B1C;
+            }
+		}
+}
+.contact {
+    width: 100%;
+    margin-top: 23px;
+    &__info {
+        margin: 9px 0px 5px 74px;
+    }
+
+    &__socialNetworks {
+    margin: 15px 0px 5px 74px;
+        a{
+            margin-right: 2px;
+        }
+        img{
+            width: 18px;
+        }
+    }
+}
+.info {
+   
+    &__phone {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        text-transform: capitalize;
+        color: #612B1C;
+        margin-bottom: 5px;
+        
+    }
+
+    &__gmail {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        text-transform: capitalize;
+        color: #612B1C;
+    }
+}
